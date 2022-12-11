@@ -222,7 +222,6 @@ body {
 /* КНОПКА И ЗАГОЛОВОК */
 .overlay {
   padding-top: 200px;
-  padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
 
@@ -481,15 +480,15 @@ body {
 .form-input:focus + .form-label,
 .form-input:not(:placeholder-shown) + .form-label {
   transform:translateY(-40px);
-
   transition: transform 300ms, color 250ms;
+
   color: var(--blue);
 }
+
 
 .form-h2 {
   display: flex;
   justify-content: center;
-
   margin-bottom: 30px;
 }
 
@@ -534,7 +533,6 @@ body {
   letter-spacing: 0.03em;
 
   color: #757575;
-
 }
 
 
@@ -593,6 +591,11 @@ body {
 
 
 /* <!-- Детали --> */
+.color-quality {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 
 .list-1,
 .list-2,
@@ -1057,10 +1060,6 @@ body {
 
   color: #FFFFFF;
 }
-/* .link-butt:active {
-  color: #fff;
-  background: #2196F3;
-} */
 
 .icon-icon-send {
   fill: var(--white);

@@ -484,7 +484,81 @@ body {
 .iconn:not(:last-child) {
     margin-right: 10px;
 }
-
+/* ПІДПИШІТЬСЯ НА РОЗСИЛКУ */
+.butt-type {
+    margin-left: 93px;
+    
+  }
+  
+  
+  .butt-text {
+    display: block;
+    margin-bottom: 20px;
+  
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+  
+    color: #FFFFFF;
+  }
+  
+  
+  .butt-join {
+    display: flex;
+    gap: 10px;
+  }
+  
+  
+  .link-input {
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 20px;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    
+    width: 358px;
+    height: 50px;
+  
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #2F303A; 
+  
+    outline: none;
+  }
+  
+  
+  .link-butt {
+    width: 200px;
+    height: 50px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    border-radius: 4px;
+    background: #2196F3;
+    border-color: transparent;
+  
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+  
+    cursor:pointer;
+  
+    color: #FFFFFF;
+  }
+  
+  .icon-icon-send {
+    fill: var(--white);
+  
+    margin-left: 10px;
+  }
 
 
 
