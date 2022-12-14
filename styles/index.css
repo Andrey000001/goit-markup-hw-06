@@ -60,7 +60,7 @@ body {
 }
 
 
-.main-nav {
+.nav {
   display: flex;
   align-items: center;
 }
@@ -68,7 +68,7 @@ body {
 
 
 /* 3 СЫЛКИ НАВИГАЦИИ  */
-.choice {
+.list__link {
   position: relative;
 
   display: block;
@@ -88,12 +88,7 @@ body {
 }
 
 
-.item {
-  position: relative;
-}
-
-
-.card::after {
+.list__card::after {
   content: '';
 
   position: absolute;
@@ -109,10 +104,10 @@ body {
 
 
 
-.choice:hover,
-.contact:hover,
-.choice:focus,
-.contact:focus {
+.list__link:hover,
+.contacts__link:hover,
+.list__link:focus,
+.contacts__link:focus {
   color: var(--blue);
 }
 
@@ -125,7 +120,7 @@ body {
   list-style: none;
 }
 
-.item + .item {
+.list__item + .list__item {
   margin-left: 50px;
 }
 
@@ -133,18 +128,18 @@ body {
 
 
 /* КОНТАКТЫ */
-.info {
+.contacts {
   display: flex;
   margin-left: auto;
   align-items: center;
 }
 
 
-.info .contact + .contact {
+.contacts__link + .contacts__link {
   margin-left: 50px;
 }
 
-.contact {
+.contacts__link {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -163,7 +158,7 @@ body {
 }
 
 
-.link_mail {
+.contacts__mail {
   width: 16px;
   height: 12px;
   margin-right: 10px;
@@ -172,7 +167,7 @@ body {
 }
 
 
-.link_nomer {
+.contacts__tel {
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -188,8 +183,8 @@ body {
 /* КОНТАКТЫ END*/
 
 
-/* ИМЯ САЙТА  */
-.website_name {
+/* Name cite*/
+ .nav__link {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -198,22 +193,33 @@ body {
 
   color: var(--blue);
   text-decoration: none;
-}
 
-
-.name-1 {
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
 }
 
+.contact__information--link {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 
-.studio {
+  color: var(--blue);
+  text-decoration: none;
+
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+
+.nav__studio {
   color: #000;
 }
 
 
-.studioo {
+.contact__information--web {
   color: var(--white);
 }
 /* ИМЯ САЙТА  END*/
@@ -243,7 +249,7 @@ body {
   }
 
 
-.big-title {
+.overlay__title {
   width: 696px;
   height: 120px;
 
@@ -263,7 +269,7 @@ body {
 /* КНОПКА И ЗАГОЛОВОК END*/
 
 /* КНОПКА */
-.button-one {
+.button {
   position: relative;
   
   display: inline-block;
@@ -607,27 +613,28 @@ body {
 
 
 /* <!-- Детали --> */
-.color-quality {
+.cards {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 
-.list-1,
 .list-2,
 .list-3 {
   list-style: none;
 }
 
 
-.list-1 {
+.list__skills {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
+
+  list-style: none;
 }
 
 
-.item_quality::before {
+.list__skills--item::before {
   display: block;
   content: "";
   margin: 0 auto;
@@ -643,7 +650,7 @@ body {
 }
 
 
-.item_quality + .item_quality {
+.list__skills--item + .list__skills--item {
   margin-left: 30px;
 }
 
@@ -672,7 +679,7 @@ body {
 }
 
 
-.quality {
+.list__skills--logo {
   margin-top: 30px;
   margin-bottom: 10px;
 
@@ -686,7 +693,7 @@ body {
 }
 
 
-.text {
+.list__skills--text {
   margin-top: 0;
   margin-bottom: 0;
 
@@ -701,15 +708,16 @@ body {
 
 
 /*Компьютер ,Телефон ,Планшет */
-.product-thumb {
+.list__product--item {
   position: relative;
 
   display: flex;
   justify-content: center;
+
 }
 
 
-.product-thumb::before {
+.list__product--item::before {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -722,7 +730,7 @@ body {
 }
 
 
-.text-thumb {
+.list__product--text {
   position: absolute;
   bottom: 27px;
 
@@ -736,12 +744,12 @@ body {
 }
 
 
-.color-370 {
+.cards__addition {
   padding-bottom: 94px;
 }
 
 
-.subtitle {
+.cards__addition--subtitle {
   text-align: center;
   margin-top: 0;
   margin-bottom: 50px;
@@ -756,19 +764,16 @@ body {
 }
 
 
-.list-2 {
+.list__product {
   display: flex;
   margin-top: 0;
+  gap: 30px;
 }
 
-
-.item_subtitle + .item_subtitle {
-  margin-left: 30px;
-}
 /*Компьютер ,Телефон ,Планшет END*/
 
 /* Наша команда ФОТКИ И ОПИСАНИЕ */
-.color-team {
+.cards-team {
   padding-top: 94px;
   padding-bottom: 94px;
 
@@ -776,21 +781,23 @@ body {
 }
 
 
-.p_h3 {
+.data {
   padding-top: 30px;
   padding-bottom: 16px;
 }
 
 
-.igor_dem {
+.list__team--item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white);
+
+  height: 428px;
 }
 
 
-.fio {
+.data__name {
   margin-bottom: 10px;
   text-align: center;
 
@@ -805,25 +812,22 @@ body {
 
 
 /* SVG 4-------------- */
-.iconn + .iconn {
+.list__svg--item + .list__svg--item {
   margin-left: 10px;
 }
 
 
-.inst_twit_face_lin {
+.list__svg {
+  display: flex;
+  list-style: none;
+
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 30px;
 }
 
 
-.social_network {
-  display: flex;
-  list-style: none;
-}
-
-
-.icons {
+.list__svg--link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -835,30 +839,32 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icons:hover,
-.icons:focus {
+.list__svg--link:hover,
+.list__svg--link:focus {
   background-color: var(--blue);
 }
 
 
-.svg_4 {
+.list__svg--icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-.icons:hover .svg_4,
-.icons:focus .svg_4 {
+.list__svg--link:hover .list__svg--icon,
+.list__svg--link:focus .list__svg--icon {
   fill: var(--white);
 }
 
 
-.list-3 {
+.list__team {
   display: flex;
+  list-style: none;
+  gap: 30px;
 }
 
 
-.it {
+.data__growth {
   text-align: center;
 
   font-family: var(--font-roboto);
@@ -871,31 +877,31 @@ body {
 
 /* action -6 SVG!!! */
 
-.groups {
+.group__cards {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 
-.action {
+.list__compani {
   display: flex;
 
   list-style: none;
 }
 
 
-.group {
+.list__compani--logo {
   width: 170px;
   height: 92px;
 }
 
 
-.group + .group {
+.list__compani--logo + .list__compani--logo {
   margin-left: 30px;
 }
 
 
-.group_group {
+.list__compani--link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -910,8 +916,8 @@ body {
 }
 
 
-.group_group:hover,
-.group_group:focus {
+.list__compani--link:hover,
+.list__compani--link:focus {
   fill: #2196f3;
   border-color: #2196f3;
 }
@@ -922,21 +928,14 @@ body {
 
 
 /* FOOTER- НИЗ */
-.floor {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 
   background-color: #2f303a;
 }
 
-
-.web {
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-
-.streat {
+.contact__information--streat {
   margin-bottom: 9px;
 
   font-family: var(--font-roboto);
@@ -949,7 +948,8 @@ body {
 }
 
 
-.contact-1 {
+.contact__information--mail,
+.contact__information--tel {
   display: block;
 
   font-family: var(--font-roboto);
@@ -962,24 +962,23 @@ body {
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-.contact-1 + .contact-1 {
-  margin-top: 9px;
+.contact__information--mail {
+  margin-bottom: 9px;
 }
 
-
-.contact-1:hover,
-.contact-1:focus {
+.contact__information--mail:hover,
+.contact__information--tel:hover,
+.contact__information--mail:focus,
+.contact__information--tel:focus {
   color: var(--blue);
 }
 
 
-.streat_contact-1 {
+.contact__information {
   margin-right: 70px;
 }
 
-.join {
+.join__text {
   margin-bottom: 20px;
 
   font-family: var(--font-roboto);
@@ -992,29 +991,31 @@ body {
 }
 
 
-.svg_4_4 {
+.list__svg--social {
   fill: var(--white);
 }
 
-
-.footre-container {
+.list__footer {
+  list-style: none;
+  display: flex;
+}
+.footer__contain {
   display: flex;
   align-items: baseline;
 }
 
 
-.iconsss {
+.list__svg--link {
   border-radius: 50%;
   background-color: #ffffff1a;
 }
 /*Підпишіться на розсилку Start*/
-.butt-type {
+.subscribe {
   margin-left: 93px;
-  
 }
 
 
-.butt-text {
+.subscribe-text {
   display: block;
   margin-bottom: 20px;
 
@@ -1028,13 +1029,13 @@ body {
 }
 
 
-.butt-join {
+.button__join {
   display: flex;
   gap: 10px;
 }
 
 
-.link-input {
+.button__join--input {
   font-family: 'Roboto';
   font-size: 16px;
   line-height: 20px;
@@ -1055,7 +1056,7 @@ body {
 }
 
 
-.link-butt {
+.button_footer {
   width: 200px;
   height: 50px;
 
@@ -1078,7 +1079,7 @@ body {
   color: #FFFFFF;
 }
 
-.icon-icon-send {
+.button_footer--icon {
   fill: var(--white);
 
   margin-left: 10px;
